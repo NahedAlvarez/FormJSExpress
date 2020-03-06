@@ -8,13 +8,13 @@
 <body>
     <% if(invalid === true)
     {%>
-        <h1> invalid</h1>
+        <h1>invalid password</h1>
     <%}%>
     <form action="/formsubmit", method="POST">
         <label for="">nombre</label>
-        <input type="text" name="nombre de usuario">
+        <input type="text" name="name">
         <label for="">apellido</label>
-        <input type="text" name="apellido de usuario">
+        <input type="text" name="lastName">
         <label for="">contrasena</label>
         <input type="password" name="password">
         <button type="submit">submit</button>
