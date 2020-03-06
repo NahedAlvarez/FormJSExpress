@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>templates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <% if(invalid === true)
+    {%>
+        <h1> invalid</h1>
+    <%}%>
+    <form action="/formsubmit", method="POST">
+        <label for="">nombre</label>
+        <input type="text" name="nombre de usuario">
+        <label for="">apellido</label>
+        <input type="text" name="apellido de usuario">
+        <label for="">contrasena</label>
+        <input type="password" name="password">
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
